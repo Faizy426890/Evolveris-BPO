@@ -26,16 +26,7 @@ function IconInstagram(props: React.SVGProps<SVGSVGElement>) {
   )
 }
 
-function IconWhatsApp(props: React.SVGProps<SVGSVGElement>) {
-  return (
-    <svg viewBox="0 0 24 24" aria-hidden="true" className="h-6 w-6" {...props}>
-      <path
-        fill="currentColor"
-        d="M20.52 3.48A11.8 11.8 0 0 0 12 0C5.37 0 0 5.37 0 12c0 2.12.55 4.13 1.6 5.93L0 24l6.23-1.63A11.85 11.85 0 0 0 12 24c6.63 0 12-5.37 12-12 0-3.2-1.25-6.2-3.48-8.52zM12 21.5c-1.85 0-3.64-.5-5.2-1.45l-.37-.23-3.68.96.98-3.59-.24-.39A9.52 9.52 0 0 1 2.5 12C2.5 6.9 6.9 2.5 12 2.5S21.5 6.9 21.5 12 17.1 21.5 12 21.5zm5.24-6.67c-.29-.15-1.7-.83-1.97-.93-.27-.1-.47-.15-.67.15-.2.29-.77.93-.95 1.12-.18.19-.35.21-.64.08-.29-.14-1.22-.45-2.32-1.44-.86-.77-1.45-1.72-1.62-2-.17-.29-.02-.45.13-.6.13-.13.29-.35.44-.53.15-.18.2-.29.3-.49.1-.19.05-.36-.03-.5-.08-.15-.67-1.62-.92-2.21-.24-.59-.49-.51-.67-.52h-.57c-.2 0-.52.07-.8.36s-1.05 1.03-1.05 2.5 1.08 2.9 1.23 3.1c.15.2 2.13 3.26 5.15 4.57.72.31 1.28.49 1.72.62.72.23 1.37.2 1.89.12.58-.09 1.7-.7 1.94-1.37.24-.67.24-1.25.17-1.37-.07-.12-.26-.2-.55-.35z"
-      />
-    </svg>
-  )
-}
+
 
 export function SiteFooter() {
   return (
@@ -49,7 +40,7 @@ export function SiteFooter() {
           <div className="flex items-center gap-4">
             <div className="flex-shrink-0">
           <img
-            src="https://res.cloudinary.com/diml90c1y/image/upload/v1761520947/1_Transparent_Image_dq1uba.png"
+            src="https://res.cloudinary.com/daxjhteb5/image/upload/v1779582522/WhatsApp_Image_2026-05-24_at_05.19.22-removebg-preview_zlwmwz.png"
             alt="Brand Logo"
             className="h-32 lg:h-36 w-auto object-contain"
           />
@@ -67,25 +58,23 @@ export function SiteFooter() {
           <div className="flex items-center gap-5">
             <Link
               aria-label="Facebook"
-              href="#"
+              href="https://www.facebook.com/athlecure"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-gray-600 dark:text-gray-300 hover:text-primary transition-colors"
             >
               <IconFacebook />
             </Link>
             <Link
               aria-label="Instagram"
-              href="#"
+              href="https://www.instagram.com/theathlecure"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-gray-600 dark:text-gray-300 hover:text-primary transition-colors"
             >
               <IconInstagram />
             </Link>
-            <Link
-              aria-label="WhatsApp"
-              href="#"
-              className="text-gray-600 dark:text-gray-300 hover:text-primary transition-colors"
-            >
-              <IconWhatsApp />
-            </Link>
+          
           </div>
         </div>
 

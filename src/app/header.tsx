@@ -1,12 +1,12 @@
 export default function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-[#D2CFC8]/30 h-[70px]">
-      <nav className="max-w-7xl mx-auto    lg:px-8 h-full flex items-center justify-between overflow-hidden">
+      <nav className="w-full px-4 lg:px-8 h-full flex items-center justify-between overflow-hidden">
         <div className="flex-shrink-0">
           <img
-            src="https://res.cloudinary.com/diml90c1y/image/upload/v1761520947/1_Transparent_Image_dq1uba.png"
+            src="https://res.cloudinary.com/daxjhteb5/image/upload/v1779582522/WhatsApp_Image_2026-05-24_at_05.19.22-removebg-preview_zlwmwz.png"
             alt="Brand Logo"
-            className="h-32  lg:h-36  w-auto object-contain"
+            className="h-32 lg:h-36 w-auto object-contain"
           />
         </div>
 

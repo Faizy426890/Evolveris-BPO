@@ -95,7 +95,7 @@ export function AthelcureChatbot() {
           )}
         >
           <Image
-            src="https://res.cloudinary.com/diml90c1y/image/upload/v1758075156/chat-bot-3d-icon_235528-2179-removebg-preview_epyyls.png"
+            src="https://res.cloudinary.com/daxjhteb5/image/upload/v1779582706/chatbot-robot-head-icon-for-virtual-assistant-and-customer-support-ai-conversation-service-with-voice-and-message-reply-automation-platform-for-helpdesk-communication-3d-illustration-png-removebg-prev_hkr7es.png"
             alt="Chatbot icon"
             width={74}
             height={74}
@@ -114,7 +114,7 @@ export function AthelcureChatbot() {
           <div className="flex items-center gap-2 sm:gap-3">
             <div className="flex-shrink-0">
               <img
-                src="https://res.cloudinary.com/diml90c1y/image/upload/v1761520947/1_Transparent_Image_dq1uba.png"
+                src="https://res.cloudinary.com/daxjhteb5/image/upload/v1779582522/WhatsApp_Image_2026-05-24_at_05.19.22-removebg-preview_zlwmwz.png"
                 alt="Brand Logo"
                 className="h-12 sm:h-16 md:h-20 w-auto object-contain"
               />
@@ -145,7 +145,7 @@ export function AthelcureChatbot() {
               {m.role === "assistant" && (
                 <div className="flex-shrink-0 mt-1">
                   <img
-                    src="https://res.cloudinary.com/diml90c1y/image/upload/v1761520947/1_Transparent_Image_dq1uba.png"
+                    src="https://res.cloudinary.com/daxjhteb5/image/upload/v1779582522/WhatsApp_Image_2026-05-24_at_05.19.22-removebg-preview_zlwmwz.png"
                     alt="Athelcure"
                     className="h-6 w-6 sm:h-8 sm:w-8 rounded-full object-contain bg-white border border-border"
                   />
