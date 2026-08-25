@@ -226,16 +226,16 @@ export default function CollectionRateSection() {
               <Image
                 src="https://res.cloudinary.com/geecu3mo/image/upload/v1787666326/28638-removebg-preview.png"
                 alt=""
-                width={188}
-                height={264}
+                width={220}
+                height={308}
                 className="object-contain float-up"
-                style={{ filter: "drop-shadow(0 12px 28px rgba(123,109,196,0.22))" }}
+                style={{ filter: "drop-shadow(0 16px 36px rgba(123,109,196,0.28))" }}
                 priority
               />
             </div>
 
             {/* Content — padded right to clear image on desktop */}
-            <div className="relative z-10 h-full flex flex-col pr-0 lg:pr-48">
+            <div className="relative z-10 h-full flex flex-col pr-0 lg:pr-52">
 
               <div className="flex items-start justify-between mb-8">
                 <div>
@@ -292,6 +292,25 @@ export default function CollectionRateSection() {
                     </div>
                   </div>
                 ))}
+              </div>
+
+              {/* Robot image — mobile only, below portfolio list */}
+              <div
+                className="flex justify-center pt-6 mt-2 lg:hidden"
+                style={fadeIn(700)}
+              >
+                <Image
+                  src="https://res.cloudinary.com/geecu3mo/image/upload/v1787666326/28638-removebg-preview.png"
+                  alt="AI Collection Agent"
+                  width={240}
+                  height={336}
+                  className="object-contain float-up"
+                  style={{
+                    filter: "drop-shadow(0 16px 36px rgba(123,109,196,0.30))",
+                    maxWidth: "60vw",
+                  }}
+                  priority
+                />
               </div>
             </div>
           </div>
