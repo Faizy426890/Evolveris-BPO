@@ -5,6 +5,7 @@ import SolutionsSection from "./solutions-section"
 import PeopleTechSection from "./people-tech-section"
 import IndustriesSection from "./industries-section"
 import PerformanceSection from "./performance-section"
+import CollectionRateSection from "./collection-rate-section"
 import HowItWorksSection from "./how-it-works-section"
 import TrustSection from "./trust-section"
 import LanguagesSection from "./languages-section"
@@ -21,6 +22,7 @@ export default function Page() {
       <PeopleTechSection />
       <IndustriesSection />
       <PerformanceSection />
+      <CollectionRateSection />
       <HowItWorksSection />
       <TrustSection />
       <LanguagesSection />
