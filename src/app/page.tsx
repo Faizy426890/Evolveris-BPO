@@ -9,6 +9,7 @@ import CollectionRateSection from "./collection-rate-section"
 import HowItWorksSection from "./how-it-works-section"
 import TrustSection from "./trust-section"
 import LanguagesSection from "./languages-section"
+import ReviewsSection from "./reviews-section"
 import ContactSection from "./contact-section"
 import { SiteFooter } from "./site-footer"
 
@@ -26,6 +27,7 @@ export default function Page() {
       <HowItWorksSection />
       <TrustSection />
       <LanguagesSection />
+      <ReviewsSection />
       <ContactSection />
       <SiteFooter />
     </main>
