@@ -6,11 +6,11 @@ const LOGO =
   "https://res.cloudinary.com/geecu3mo/image/upload/v1787617688/WhatsApp_Image_2026-08-25_at_05.25.00-removebg-preview.png"
 
 const NAV_LINKS = [
-  { label: "Solutions", href: "#solutions" },
-  { label: "Industries", href: "#industries" },
-  { label: "Performance", href: "#performance" },
-  { label: "How It Works", href: "#how-it-works" },
-  { label: "Contact", href: "#contact" },
+  { label: "Services", href: "/#solutions" },
+  { label: "About Us", href: "/about" },
+  { label: "Industries", href: "/#industries" },
+  { label: "How It Works", href: "/#how-it-works" },
+  { label: "Contact", href: "/#contact" },
 ]
 
 export default function Header() {
@@ -50,7 +50,7 @@ export default function Header() {
 
         {/* CTA */}
         <a
-          href="#contact"
+          href="/#contact"
           className="hidden md:inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 hover:opacity-90 hover:scale-105"
           style={{ backgroundColor: "#1a1826", color: "#ffffff" }}
         >
@@ -98,7 +98,7 @@ export default function Header() {
             </a>
           ))}
           <a
-            href="#contact"
+            href="/#contact"
             className="inline-flex items-center justify-center px-5 py-3 rounded-full text-sm font-semibold"
             style={{ backgroundColor: "#1a1826", color: "#ffffff" }}
             onClick={() => setMenuOpen(false)}

@@ -8,6 +8,7 @@ const SERVICES = [
     title: "Customer Experience",
     desc: "Specialists handling customer interactions with empathy and precision across every channel.",
     tag: "CX",
+    slug: "customer-experience",
   },
   {
     icon: (
@@ -18,6 +19,7 @@ const SERVICES = [
     title: "Technical Support",
     desc: "Troubleshooting complex technical issues with trained, certified agents who resolve on first contact.",
     tag: "TECH",
+    slug: "technical-support",
   },
   {
     icon: (
@@ -28,6 +30,7 @@ const SERVICES = [
     title: "Sales & Lead Generation",
     desc: "Driving revenue through high-converting outbound and inbound sales engines.",
     tag: "SALES",
+    slug: "sales-lead-generation",
   },
   {
     icon: (
@@ -38,6 +41,7 @@ const SERVICES = [
     title: "Back Office",
     desc: "Processing documents and data efficiently so your front office can stay focused.",
     tag: "OPS",
+    slug: "back-office",
   },
   {
     icon: (
@@ -48,6 +52,7 @@ const SERVICES = [
     title: "Multilingual Support",
     desc: "Communicating with international customers in their own language across 30+ languages.",
     tag: "MULTI",
+    slug: "multilingual-support",
   },
   {
     icon: (
@@ -58,6 +63,7 @@ const SERVICES = [
     title: "Real-Time Analyst Services",
     desc: "On-floor RTAs monitoring performance and responding to deviations as they happen.",
     tag: "RTA",
+    slug: "real-time-analyst",
   },
   {
     icon: (
@@ -68,6 +74,7 @@ const SERVICES = [
     title: "Workforce & Performance",
     desc: "Monitoring operational analytics to keep your customer engine running at peak efficiency.",
     tag: "WFM",
+    slug: "workforce-performance",
   },
   {
     icon: (
@@ -78,6 +85,7 @@ const SERVICES = [
     title: "AI & Automation",
     desc: "Working alongside AI assistants to scale operations without losing the human touch.",
     tag: "AI",
+    slug: "ai-automation",
   },
 ]
 
@@ -106,7 +114,7 @@ export default function SolutionsSection() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {SERVICES.map((svc, i) => (
-            <div key={i} className="group ev-card p-6 rounded-2xl cursor-pointer">
+            <a key={i} href={`/services/${svc.slug}`} className="group ev-card p-6 rounded-2xl cursor-pointer block">
               {/* Tag + icon row */}
               <div className="flex items-center justify-between mb-5">
                 <div
@@ -134,7 +142,7 @@ export default function SolutionsSection() {
               >
                 Learn more →
               </div>
-            </div>
+            </a>
           ))}
         </div>
       </div>

@@ -2,33 +2,37 @@ const LOGO =
   "https://res.cloudinary.com/geecu3mo/image/upload/v1787617688/WhatsApp_Image_2026-08-25_at_05.25.00-removebg-preview.png"
 
 const SOLUTIONS_LINKS = [
-  "Customer Experience",
-  "Real-Time Analysts",
-  "Technical Support",
-  "Sales & Lead Gen",
-  "AI & Automation",
+  { label: "Customer Experience", href: "/services/customer-experience" },
+  { label: "Technical Support", href: "/services/technical-support" },
+  { label: "Sales & Lead Generation", href: "/services/sales-lead-generation" },
+  { label: "Back Office", href: "/services/back-office" },
+  { label: "Multilingual Support", href: "/services/multilingual-support" },
+  { label: "Real-Time Analysts", href: "/services/real-time-analyst" },
+  { label: "Workforce & Performance", href: "/services/workforce-performance" },
+  { label: "AI & Automation", href: "/services/ai-automation" },
 ]
 
 const COMPANY_LINKS = [
-  "About Us",
-  "How It Works",
-  "Industries",
-  "Careers",
-  "Contact",
+  { label: "About Us", href: "/about" },
+  { label: "How It Works", href: "/#how-it-works" },
+  { label: "Industries", href: "/#industries" },
+  { label: "Contact", href: "/#contact" },
 ]
 
 export function SiteFooter() {
   return (
     <footer style={{ backgroundColor: "#1a1826" }}>
       <div className="max-w-7xl mx-auto px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           {/* Brand column */}
-          <div className="md:col-span-1">
-            <img
-              src={LOGO}
-              alt="Evolveris"
-              className="h-22 w-auto object-contain mb-5"
-            />
+          <div className="md:col-span-2">
+            <a href="/">
+              <img
+                src={LOGO}
+                alt="Evolveris"
+                className="h-16 w-auto object-contain mb-5"
+              />
+            </a>
             <p className="text-sm leading-relaxed max-w-xs" style={{ color: "rgba(255,255,255,0.45)" }}>
               The global operating system for modern customer experience. People powered.
               Technology enabled. Connected globally.
@@ -48,13 +52,13 @@ export function SiteFooter() {
               className="text-xs tracking-widest uppercase mb-5 font-semibold"
               style={{ color: "#7b6dc4" }}
             >
-              Solutions
+              Services
             </h4>
             <ul className="space-y-3">
               {SOLUTIONS_LINKS.map((link) => (
-                <li key={link}>
-                  <a href="#solutions" className="ev-footer-link">
-                    {link}
+                <li key={link.label}>
+                  <a href={link.href} className="ev-footer-link">
+                    {link.label}
                   </a>
                 </li>
               ))}
@@ -71,9 +75,9 @@ export function SiteFooter() {
             </h4>
             <ul className="space-y-3">
               {COMPANY_LINKS.map((link) => (
-                <li key={link}>
-                  <a href="#" className="ev-footer-link">
-                    {link}
+                <li key={link.label}>
+                  <a href={link.href} className="ev-footer-link">
+                    {link.label}
                   </a>
                 </li>
               ))}
