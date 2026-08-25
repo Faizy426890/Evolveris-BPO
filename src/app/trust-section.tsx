@@ -87,10 +87,10 @@ export default function TrustSection() {
           Enterprise-grade security, quality controls and compliance wrapped around every operation we run.
         </p>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-10 lg:gap-12 items-center">
           {/* Agent image card */}
-          <div className="flex items-center justify-center">
-            <div className="relative" style={{ width: 360 }}>
+          <div className="flex items-center justify-center px-8 sm:px-0">
+            <div className="relative w-full" style={{ maxWidth: 360 }}>
               {/* Background card */}
               <div
                 className="relative rounded-3xl overflow-hidden"

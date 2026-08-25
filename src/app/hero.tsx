@@ -40,7 +40,7 @@ export default function Hero() {
         }}
       />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 pt-32 pb-20">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 md:pt-32 pb-16 md:pb-20">
         {/* Announcement strip */}
         <div className="flex justify-center mb-10">
           <div
@@ -198,7 +198,7 @@ export default function Hero() {
               <div style={{ width: 52 }} />
             </div>
 
-            <div className="p-6 grid md:grid-cols-2 gap-6">
+            <div className="p-4 sm:p-6 grid sm:grid-cols-2 gap-4 sm:gap-6">
               {/* Left: live activity feed */}
               <div>
                 <p className="text-[10px] uppercase tracking-widest font-semibold mb-3" style={{ color: "#9ca3af" }}>
@@ -291,21 +291,21 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Right column: 3 stat cards */}
-          <div className="flex flex-col gap-5">
+          {/* Right column: 3 stat cards — row on mobile, stacked on desktop */}
+          <div className="grid grid-cols-3 md:grid-cols-1 gap-3 md:gap-5">
             {/* Dark card */}
             <div
-              className="flex-1 rounded-3xl p-6 flex flex-col justify-between"
+              className="rounded-2xl md:rounded-3xl p-4 md:p-6 flex flex-col justify-between"
               style={{
                 backgroundColor: "#1a1826",
                 boxShadow: "0 20px 56px rgba(26,24,38,0.28)",
               }}
             >
               <div
-                className="w-10 h-10 rounded-xl flex items-center justify-center mb-3"
+                className="w-8 h-8 md:w-10 md:h-10 rounded-xl flex items-center justify-center mb-2 md:mb-3"
                 style={{ backgroundColor: "rgba(123,109,196,0.2)" }}
               >
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#9b8dd4" strokeWidth="2">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#9b8dd4" strokeWidth="2">
                   <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
                   <circle cx="9" cy="7" r="4" />
                   <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
@@ -313,8 +313,8 @@ export default function Hero() {
                 </svg>
               </div>
               <div>
-                <div className="text-4xl font-black text-white mb-1">200+</div>
-                <div className="text-xs uppercase tracking-widest font-semibold" style={{ color: "rgba(255,255,255,0.42)" }}>
+                <div className="text-2xl md:text-4xl font-black text-white mb-0.5 md:mb-1">200+</div>
+                <div className="text-[9px] md:text-xs uppercase tracking-widest font-semibold" style={{ color: "rgba(255,255,255,0.42)" }}>
                   Expert Agents
                 </div>
               </div>
@@ -322,24 +322,24 @@ export default function Hero() {
 
             {/* Purple card */}
             <div
-              className="flex-1 rounded-3xl p-6 flex flex-col justify-between"
+              className="rounded-2xl md:rounded-3xl p-4 md:p-6 flex flex-col justify-between"
               style={{
                 backgroundColor: "#7b6dc4",
                 boxShadow: "0 20px 56px rgba(123,109,196,0.38)",
               }}
             >
               <div
-                className="w-10 h-10 rounded-xl flex items-center justify-center mb-3"
+                className="w-8 h-8 md:w-10 md:h-10 rounded-xl flex items-center justify-center mb-2 md:mb-3"
                 style={{ backgroundColor: "rgba(255,255,255,0.15)" }}
               >
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2">
                   <line x1="12" y1="1" x2="12" y2="23" />
                   <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
                 </svg>
               </div>
               <div>
-                <div className="text-4xl font-black text-white mb-1">$180M+</div>
-                <div className="text-xs uppercase tracking-widest font-semibold" style={{ color: "rgba(255,255,255,0.58)" }}>
+                <div className="text-2xl md:text-4xl font-black text-white mb-0.5 md:mb-1">$180M+</div>
+                <div className="text-[9px] md:text-xs uppercase tracking-widest font-semibold" style={{ color: "rgba(255,255,255,0.58)" }}>
                   Revenue Driven
                 </div>
               </div>
@@ -347,7 +347,7 @@ export default function Hero() {
 
             {/* White card */}
             <div
-              className="flex-1 rounded-3xl p-6 flex flex-col justify-between"
+              className="rounded-2xl md:rounded-3xl p-4 md:p-6 flex flex-col justify-between"
               style={{
                 backgroundColor: "#ffffff",
                 border: "1px solid rgba(0,0,0,0.08)",
@@ -355,16 +355,16 @@ export default function Hero() {
               }}
             >
               <div
-                className="w-10 h-10 rounded-xl flex items-center justify-center mb-3"
+                className="w-8 h-8 md:w-10 md:h-10 rounded-xl flex items-center justify-center mb-2 md:mb-3"
                 style={{ backgroundColor: "#ede9fc" }}
               >
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7b6dc4" strokeWidth="2">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#7b6dc4" strokeWidth="2">
                   <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
                 </svg>
               </div>
               <div>
-                <div className="text-4xl font-black mb-1" style={{ color: "#1a1826" }}>95%</div>
-                <div className="text-xs uppercase tracking-widest font-semibold" style={{ color: "#9ca3af" }}>
+                <div className="text-2xl md:text-4xl font-black mb-0.5 md:mb-1" style={{ color: "#1a1826" }}>95%</div>
+                <div className="text-[9px] md:text-xs uppercase tracking-widest font-semibold" style={{ color: "#9ca3af" }}>
                   Avg CSAT Score
                 </div>
               </div>
