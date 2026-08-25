@@ -1,20 +1,31 @@
 import Header from "./header"
-import CurvyHero from "./hero"
-import WaitlistModal from "./wait-list-modal" 
+import Hero from "./hero"
+import StatsBar from "./stats-bar"
+import SolutionsSection from "./solutions-section"
+import PeopleTechSection from "./people-tech-section"
+import IndustriesSection from "./industries-section"
+import PerformanceSection from "./performance-section"
+import HowItWorksSection from "./how-it-works-section"
+import TrustSection from "./trust-section"
+import LanguagesSection from "./languages-section"
+import ContactSection from "./contact-section"
 import { SiteFooter } from "./site-footer"
 
 export default function Page() {
   return (
-    <main>
-      {/* Header from user-provided component */}
+    <main style={{ backgroundColor: "#f5f2ec" }}>
       <Header />
-
-      {/* Auto-opening modal on first paint */}
-      {/* <WaitlistModal /> */}
-
-      {/* Hero with curvy black blob and right-side waitlist form */}
-      <CurvyHero /> 
-      <SiteFooter/>
+      <Hero />
+      <StatsBar />
+      <SolutionsSection />
+      <PeopleTechSection />
+      <IndustriesSection />
+      <PerformanceSection />
+      <HowItWorksSection />
+      <TrustSection />
+      <LanguagesSection />
+      <ContactSection />
+      <SiteFooter />
     </main>
   )
 }
