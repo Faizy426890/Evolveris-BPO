@@ -1,5 +1,5 @@
 const LOGO =
-  "https://res.cloudinary.com/geecu3mo/image/upload/v1787617688/WhatsApp_Image_2026-08-25_at_05.25.00-removebg-preview.png"
+  "https://res.cloudinary.com/geecu3mo/image/upload/v1789086577/WhatsApp_Image_2026-09-11_at_05.26.26-removebg-preview.png"
 
 const SOLUTIONS_LINKS = [
   { label: "Customer Experience", href: "/services/customer-experience" },

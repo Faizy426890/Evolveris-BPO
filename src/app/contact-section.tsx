@@ -91,11 +91,11 @@ export default function ContactSection() {
 
         {/* Headline */}
         <h2 className="text-4xl lg:text-5xl font-extrabold text-center mb-4" style={{ color: "#1a1826" }}>
-          Let's build your{" "}
-          <span className="font-serif italic" style={{ color: "#7b6dc4" }}>operation.</span>
+          Tell us what's eating your{" "}
+          <span className="font-serif italic" style={{ color: "#7b6dc4" }}>team's time.</span>
         </h2>
         <p className="text-center max-w-lg mx-auto mb-16" style={{ color: "#6b7280" }}>
-          Tell us what you're looking for. An Evolveris specialist will reach out within 24 hours.
+          We'll map it against a queue we already run, and tell you honestly whether Evolveris is a fit before we talk numbers.
         </p>
 
         <div className="grid lg:grid-cols-2 gap-10 items-start">

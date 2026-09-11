@@ -2,7 +2,7 @@ import Header from "../header"
 import { SiteFooter } from "../site-footer"
 
 const LOGO =
-  "https://res.cloudinary.com/geecu3mo/image/upload/v1787617688/WhatsApp_Image_2026-08-25_at_05.25.00-removebg-preview.png"
+  "https://res.cloudinary.com/geecu3mo/image/upload/v1789086577/WhatsApp_Image_2026-09-11_at_05.26.26-removebg-preview.png"
 
 const BUDDY = {
   phone: "https://cdn.prod.website-files.com/661d4f6d81ac1042b721396c/697feddc28a2c98e526f6ff2_Buddy%20Talking%20with%20Phone%202.avif",

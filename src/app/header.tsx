@@ -3,12 +3,13 @@
 import { useState } from "react"
 
 const LOGO =
-  "https://res.cloudinary.com/geecu3mo/image/upload/v1787617688/WhatsApp_Image_2026-08-25_at_05.25.00-removebg-preview.png"
+  "https://res.cloudinary.com/geecu3mo/image/upload/v1789086577/WhatsApp_Image_2026-09-11_at_05.26.26-removebg-preview.png"
 
 const NAV_LINKS = [
   { label: "Services", href: "/#solutions" },
   { label: "About Us", href: "/about" },
   { label: "Industries", href: "/#industries" },
+  { label: "How We Work", href: "/#how-we-work" },
   { label: "How It Works", href: "/#how-it-works" },
   { label: "Contact", href: "/#contact" },
 ]
@@ -32,7 +33,14 @@ export default function Header() {
             <img
               src={LOGO}
               alt="Evolveris"
-              style={{ height: 68, width: "auto", objectFit: "contain" }}
+              style={{
+                height: 68,
+                width: "auto",
+                objectFit: "contain",
+                // Source artwork is white — brightness(0) paints every opaque
+                // pixel black while leaving the transparency untouched.
+                filter: "brightness(0)",
+              }}
             />
           </div>
         </a>

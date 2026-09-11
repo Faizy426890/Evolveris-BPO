@@ -1,6 +1,11 @@
 import Header from "./header"
 import Hero from "./hero"
 import StatsBar from "./stats-bar"
+import AboutSection from "./about-section"
+import HubsSection from "./hubs-section"
+import SectorsSection from "./sectors-section"
+import HowWeWorkSection from "./how-we-work-section"
+import BaselineSection from "./baseline-section"
 import SolutionsSection from "./solutions-section"
 import PeopleTechSection from "./people-tech-section"
 import IndustriesSection from "./industries-section"
@@ -19,6 +24,11 @@ export default function Page() {
       <Header />
       <Hero />
       <StatsBar />
+      <AboutSection />
+      <HubsSection />
+      <SectorsSection />
+      <HowWeWorkSection />
+      <BaselineSection />
       <SolutionsSection />
       <PeopleTechSection />
       <IndustriesSection />
