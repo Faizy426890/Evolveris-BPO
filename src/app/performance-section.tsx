@@ -1,10 +1,3 @@
-const KPI = [
-  { label: "Service Level", value: "95", unit: "%", color: "#7b6dc4", bg: "#ede9fc" },
-  { label: "Quality Score", value: "96", unit: "%", color: "#c8910a", bg: "#fef9e7" },
-  { label: "CSAT", value: "4.7", unit: "/5", color: "#7b6dc4", bg: "#ede9fc" },
-  { label: "Resolution Rate", value: "92", unit: "%", color: "#c8910a", bg: "#fef9e7" },
-]
-
 const MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun"]
 const SL_DATA = [88, 90, 91, 93, 94, 95]
 const CSAT_DATA = [90, 91, 90, 93, 95, 96]
@@ -48,29 +41,6 @@ export default function PerformanceSection() {
         <p className="text-center max-w-xl mx-auto mb-16" style={{ color: "#6b7280" }}>
           Live performance dashboards, continuous improvement loops and transparent reporting across every operation.
         </p>
-
-        {/* KPI tiles */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
-          {KPI.map((k, i) => (
-            <div
-              key={i}
-              className="p-6 rounded-2xl"
-              style={{ backgroundColor: k.bg, border: "none" }}
-            >
-              <div className="text-xs tracking-widest uppercase mb-3 font-semibold" style={{ color: k.color }}>
-                {k.label}
-              </div>
-              <div className="flex items-end gap-0.5">
-                <span className="text-5xl font-extrabold leading-none" style={{ color: k.color }}>
-                  {k.value}
-                </span>
-                <span className="text-xl font-bold mb-1" style={{ color: k.color, opacity: 0.7 }}>
-                  {k.unit}
-                </span>
-              </div>
-            </div>
-          ))}
-        </div>
 
         {/* Charts row */}
         <div className="grid lg:grid-cols-3 gap-6">

@@ -1,9 +1,3 @@
-const HIGHLIGHTS = [
-  { stat: "97%", label: "AHT Score", bg: "#ede9fc", text: "#7b6dc4" },
-  { stat: "4.8★", label: "Agent Rating", bg: "#fef9e7", text: "#c8910a" },
-  { stat: "30+", label: "Languages", bg: "#ede9fc", text: "#7b6dc4" },
-]
-
 const BENEFITS = [
   "Rigorous 8-week onboarding for every specialist",
   "Real-time coaching from on-floor analysts",
@@ -98,21 +92,6 @@ export default function PeopleTechSection() {
                 </div>
               </div>
 
-              {/* Stat cards */}
-              {HIGHLIGHTS.map((h, i) => (
-                <div
-                  key={i}
-                  className="rounded-xl sm:rounded-2xl px-3 py-2.5 sm:px-4 sm:py-3 flex items-center gap-2 sm:gap-3"
-                  style={{ backgroundColor: h.bg }}
-                >
-                  <span className="text-lg sm:text-2xl font-extrabold leading-none" style={{ color: h.text }}>
-                    {h.stat}
-                  </span>
-                  <span className="text-xs sm:text-sm font-medium" style={{ color: "#4b5563" }}>
-                    {h.label}
-                  </span>
-                </div>
-              ))}
             </div>
           </div>
 

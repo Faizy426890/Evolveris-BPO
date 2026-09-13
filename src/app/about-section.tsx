@@ -1,10 +1,3 @@
-const PROOF = [
-  { value: "2", label: "Delivery hubs", sub: "Pakistan & Accra" },
-  { value: "6", label: "Sectors served", sub: "Medical to telecom" },
-  { value: "20+", label: "Trained specialists", sub: "On the floor today" },
-  { value: "24/7", label: "Escalation line", sub: "A human, every hour" },
-]
-
 const PRINCIPLES = [
   {
     title: "Staffed like an in-house team",
@@ -96,23 +89,6 @@ export default function AboutSection() {
               ))}
             </div>
 
-            {/* Proof strip */}
-            <div
-              className="grid grid-cols-2 gap-px rounded-2xl overflow-hidden"
-              style={{ backgroundColor: "rgba(255,255,255,0.1)", border: "1px solid #1a1826" }}
-            >
-              {PROOF.map((s) => (
-                <div key={s.label} className="p-6" style={{ backgroundColor: "#1a1826" }}>
-                  <div className="text-2xl font-black mb-1" style={{ color: "#9b8dd4" }}>
-                    {s.value}
-                  </div>
-                  <div className="text-xs font-semibold text-white mb-0.5">{s.label}</div>
-                  <div className="text-[11px]" style={{ color: "rgba(255,255,255,0.42)" }}>
-                    {s.sub}
-                  </div>
-                </div>
-              ))}
-            </div>
           </div>
         </div>
       </div>

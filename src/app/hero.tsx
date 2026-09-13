@@ -161,32 +161,8 @@ export default function Hero() {
               </a>
             </div>
 
-            {/* Trust row */}
+            {/* Compliance badges */}
             <div className="flex flex-wrap items-center gap-5">
-              <div className="flex -space-x-2">
-                {["#7b6dc4", "#f0c540", "#1a1826", "#9b8dd4"].map((c, i) => (
-                  <div
-                    key={i}
-                    className="w-9 h-9 rounded-full border-2 border-white flex items-center justify-center text-white text-xs font-bold"
-                    style={{ backgroundColor: c, zIndex: 4 - i }}
-                  >
-                    {["S", "A", "M", "R"][i]}
-                  </div>
-                ))}
-              </div>
-              <div>
-                <div className="flex gap-0.5 mb-1">
-                  {[1, 2, 3, 4, 5].map(n => (
-                    <svg key={n} width="13" height="13" viewBox="0 0 24 24" fill="#f0c540">
-                      <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
-                    </svg>
-                  ))}
-                </div>
-                <p className="text-xs" style={{ color: "#6b7280" }}>
-                  Trusted by <strong style={{ color: "#1a1826" }}>40+</strong> companies worldwide
-                </p>
-              </div>
-              <div className="h-7 w-px hidden sm:block" style={{ backgroundColor: "rgba(26,24,38,0.12)" }} />
               {["SOC 2 Certified", "GDPR Compliant"].map((t) => (
                 <div key={t} className="flex items-center gap-2">
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#059669" strokeWidth="2.5">

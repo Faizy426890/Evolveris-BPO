@@ -1,10 +1,3 @@
-const HUB_STATS = [
-  { value: "6", label: "Sectors served" },
-  { value: "2", label: "Delivery hubs" },
-  { value: "18h", label: "Combined daily coverage" },
-  { value: "24/7", label: "Client escalation line" },
-]
-
 const HUBS = [
   {
     city: "Pakistan",
@@ -52,23 +45,6 @@ export default function HubsSection() {
           working hours with London, most of the US working day, and a five-hour offset that
           shortens the overnight gap most single-hub BPOs can't avoid.
         </p>
-
-        {/* Stat strip */}
-        <div
-          className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-4 rounded-2xl px-6 py-9 mb-12"
-          style={{ backgroundColor: "#f8f7f4", border: "1px solid rgba(0,0,0,0.06)" }}
-        >
-          {HUB_STATS.map((s) => (
-            <div key={s.label} className="text-center">
-              <div className="text-3xl lg:text-4xl font-black mb-1.5 tracking-tight" style={{ color: "#7b6dc4" }}>
-                {s.value}
-              </div>
-              <div className="text-xs font-medium" style={{ color: "#6b7280" }}>
-                {s.label}
-              </div>
-            </div>
-          ))}
-        </div>
 
         {/* Coverage map */}
         <div className="grid lg:grid-cols-[1.25fr_0.75fr] gap-5">
