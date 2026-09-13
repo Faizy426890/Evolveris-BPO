@@ -14,16 +14,16 @@ const geistMono = FontGeistMono({ subsets: ['latin'], weight: ['400', '500', '60
 const serif = FontSourceSerif({ subsets: ['latin'], weight: ['400', '600', '700', '800'], variable: '--font-serif' })
 
 export const metadata: Metadata = {
-  title: 'Evolveris | BPO & Customer Experience Outsourcing — UK & EU',
-  description: 'Evolveris is a UK-focused BPO delivering customer support, debt recovery, and sales outsourcing from Pakistan and Accra hubs. 95% SLA, 20+ trained specialists, live reporting.',
+  title: 'Evolveris | BPO & Customer Experience Outsourcing',
+  description: 'Evolveris is a  BPO delivering customer support, debt recovery, and sales outsourcing from Pakistan and Accra hubs. 95% SLA, 20+ trained specialists, live reporting.',
   generator: 'Evolveris',
   keywords: [
-    'BPO outsourcing UK',
+    'BPO outsourcing ',
     'customer experience outsourcing',
     'debt recovery services',
     'call centre outsourcing',
     'customer support outsourcing',
-    'sales outsourcing UK',
+    'sales outsourcing',
     'BPO Pakistan',
     'BPO Accra',
     'business process outsourcing',
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     canonical: '/',
   },
   openGraph: {
-    title: 'Evolveris | BPO & Customer Experience Outsourcing — UK & EU',
+    title: 'Evolveris | BPO & Customer Experience Outsourcing',
     description: 'Scale customer support, debt recovery, and outbound sales with Evolveris. Two delivery hubs covering UK and EU business hours. 95% average service level.',
     url: 'https://www.evolveris.com',
     siteName: 'Evolveris',
