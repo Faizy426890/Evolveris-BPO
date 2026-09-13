@@ -14,14 +14,86 @@ const geistMono = FontGeistMono({ subsets: ['latin'], weight: ['400', '500', '60
 const serif = FontSourceSerif({ subsets: ['latin'], weight: ['400', '600', '700', '800'], variable: '--font-serif' })
 
 export const metadata: Metadata = {
-  title: 'Evolveris — Better Customer Experiences',
-  description: 'Evolveris helps businesses scale customer experience and operations through exceptional people, intelligent technology and real-time expertise.',
+  title: 'Evolveris | BPO & Customer Experience Outsourcing — UK & EU',
+  description: 'Evolveris is a UK-focused BPO delivering customer support, debt recovery, and sales outsourcing from Pakistan and Accra hubs. 95% SLA, 20+ trained specialists, live reporting.',
   generator: 'Evolveris',
+  keywords: [
+    'BPO outsourcing UK',
+    'customer experience outsourcing',
+    'debt recovery services',
+    'call centre outsourcing',
+    'customer support outsourcing',
+    'sales outsourcing UK',
+    'BPO Pakistan',
+    'BPO Accra',
+    'business process outsourcing',
+    'Evolveris',
+  ],
+  authors: [{ name: 'Evolveris' }],
+  metadataBase: new URL('https://www.evolveris.com'),
+  alternates: {
+    canonical: '/',
+  },
+  openGraph: {
+    title: 'Evolveris | BPO & Customer Experience Outsourcing — UK & EU',
+    description: 'Scale customer support, debt recovery, and outbound sales with Evolveris. Two delivery hubs covering UK and EU business hours. 95% average service level.',
+    url: 'https://www.evolveris.com',
+    siteName: 'Evolveris',
+    locale: 'en_GB',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Evolveris | BPO & Customer Experience Outsourcing',
+    description: 'Scale your customer operations with Evolveris. Two delivery hubs, 95% SLA, specialists in support, debt recovery and sales.',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-snippet': -1,
+      'max-image-preview': 'large',
+      'max-video-preview': -1,
+    },
+  },
+}
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: 'Evolveris',
+  url: 'https://www.evolveris.com',
+  description: 'BPO and customer experience outsourcing — customer support, debt recovery, and outbound sales for UK and EU businesses.',
+  foundingLocation: {
+    '@type': 'Place',
+    name: 'United Kingdom',
+  },
+  areaServed: ['GB', 'EU'],
+  serviceType: [
+    'Customer Support Outsourcing',
+    'Debt Recovery',
+    'Outbound Sales',
+    'Business Process Outsourcing',
+  ],
+  contactPoint: {
+    '@type': 'ContactPoint',
+    contactType: 'customer service',
+    availableLanguage: 'English',
+    hoursAvailable: 'Mo-Fr 09:00-18:00',
+  },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${inter.variable} ${geistMono.variable} ${serif.variable}`}>
+    <html lang="en-GB" className={`${inter.variable} ${geistMono.variable} ${serif.variable}`}>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body className="font-sans antialiased">
         {children}
         <Toaster position="top-center" richColors closeButton />

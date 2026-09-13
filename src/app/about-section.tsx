@@ -1,7 +1,7 @@
 const PROOF = [
   { value: "2", label: "Delivery hubs", sub: "Pakistan & Accra" },
   { value: "6", label: "Sectors served", sub: "Medical to telecom" },
-  { value: "200+", label: "Trained specialists", sub: "On the floor today" },
+  { value: "20+", label: "Trained specialists", sub: "On the floor today" },
   { value: "24/7", label: "Escalation line", sub: "A human, every hour" },
 ]
 

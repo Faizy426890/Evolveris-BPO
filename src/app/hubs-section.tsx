@@ -28,7 +28,6 @@ const HUBS = [
 const MARKETS = [
   { label: "United Kingdom", window: "09:00 – 18:00 GMT" },
   { label: "European Union", window: "09:00 – 18:00 CET" },
-  { label: "United States", window: "09:00 – 18:00 ET" },
 ]
 
 export default function HubsSection() {

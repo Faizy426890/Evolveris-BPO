@@ -1,7 +1,7 @@
 const STATS = [
-  { value: ">30K", label: "Leads generated monthly", badge: "Monthly" },
-  { value: "$180M+", label: "Revenue brought to clients", badge: "Revenue" },
-  { value: "200+", label: "Trained specialists", badge: "Team" },
+  { value: ">1K", label: "Leads generated monthly", badge: "Monthly" },
+  { value: "$1M+", label: "Revenue brought to clients", badge: "Revenue" },
+  { value: "20+", label: "Trained specialists", badge: "Team" },
   { value: "95%", label: "Average service level", badge: "SLA" },
   { value: "24/7", label: "Round-the-clock coverage", badge: "Hours" },
 ]

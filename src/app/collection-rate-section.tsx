@@ -12,10 +12,10 @@ const PORTFOLIOS = [
 ]
 
 const BOTTOM_STATS = [
-  { v: "18,500+", l: "Accounts Managed" },
-  { v: "$2.4B",   l: "Total Recovered"  },
-  { v: "96.8%",   l: "Recovery Rate"    },
-  { v: "500+",    l: "Enterprise Clients" },
+  { v: "150+",   l: "Accounts Managed" },
+  { v: "$1.2M",  l: "Total Recovered"  },
+  { v: "89.8%",  l: "Recovery Rate"    },
+  { v: "40+",    l: "Enterprise Clients" },
 ]
 
 export default function CollectionRateSection() {
@@ -44,7 +44,7 @@ export default function CollectionRateSection() {
   /* Counter animation */
   useEffect(() => {
     if (!entered) return
-    const target = 96.8
+    const target = 89.8
     const duration = 2200
     const start = performance.now()
     const tick = (now: number) => {
@@ -173,7 +173,7 @@ export default function CollectionRateSection() {
                   className="px-3 py-1 rounded-full text-xs font-bold"
                   style={{ backgroundColor: "rgba(240,197,64,0.16)", color: "#f0c540" }}
                 >
-                  ↑ 2× better
+                  ↑ 87% above avg
                 </span>
               </div>
             </div>
@@ -181,9 +181,9 @@ export default function CollectionRateSection() {
             {/* Mini stat cards */}
             <div className="grid grid-cols-3 gap-3">
               {[
-                { v: "$2.4B",  l: "Recovered",   t: "↑ 34% YoY",       c: "#7b6dc4" },
-                { v: "12d",    l: "Resolution",   t: "8 days faster",    c: "#c8910a" },
-                { v: "99.2%",  l: "Compliance",  t: "Zero violations",  c: "#7b6dc4" },
+                { v: "$1.2M",  l: "Recovered",   t: "↑ 28% YoY",       c: "#7b6dc4" },
+                { v: "14d",    l: "Resolution",   t: "6 days faster",    c: "#c8910a" },
+                { v: "98.4%",  l: "Compliance",  t: "Zero violations",  c: "#7b6dc4" },
               ].map((s, i) => (
                 <div
                   key={i}

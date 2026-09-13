@@ -11,7 +11,7 @@ const LIVE_ITEMS = [
   { icon: "💬", type: "CHAT", msg: "I need help with my order", time: "01s", cls: "op-item-1" },
   { icon: "📞", type: "CALL", msg: "Incoming call — Priority", time: "02s", cls: "op-item-2" },
   { icon: "✉️", type: "EMAIL", msg: "New ticket #4821 opened", time: "03s", cls: "op-item-3" },
-  { icon: "📊", type: "LIVE", msg: "Service Level 96.4%", time: "04s", cls: "op-item-4" },
+  { icon: "📊", type: "LIVE", msg: "Service Level 95.0%", time: "04s", cls: "op-item-4" },
 ]
 
 function useHubClocks() {
@@ -183,7 +183,7 @@ export default function Hero() {
                   ))}
                 </div>
                 <p className="text-xs" style={{ color: "#6b7280" }}>
-                  Trusted by <strong style={{ color: "#1a1826" }}>500+</strong> companies worldwide
+                  Trusted by <strong style={{ color: "#1a1826" }}>40+</strong> companies worldwide
                 </p>
               </div>
               <div className="h-7 w-px hidden sm:block" style={{ backgroundColor: "rgba(26,24,38,0.12)" }} />
